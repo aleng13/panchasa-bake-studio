@@ -61,7 +61,36 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Kerala spice-inspired custom colors
+				spice: {
+					turmeric: 'hsl(var(--spice-turmeric))',
+					cardamom: 'hsl(var(--spice-cardamom))',
+					cinnamon: 'hsl(var(--spice-cinnamon))',
+				},
+				coconut: {
+					cream: 'hsl(var(--coconut-cream))',
+				},
+				palm: {
+					green: 'hsl(var(--palm-green))',
+				},
+				sunset: {
+					orange: 'hsl(var(--sunset-orange))',
 				}
+			},
+			backgroundImage: {
+				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-spice': 'var(--gradient-spice)',
+				'gradient-hero': 'var(--gradient-hero)',
+			},
+			boxShadow: {
+				'warm': 'var(--shadow-warm)',
+				'soft': 'var(--shadow-soft)',
+				'glow': 'var(--shadow-glow)',
+			},
+			fontFamily: {
+				'display': ['Playfair Display', 'serif'],
+				'body': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
