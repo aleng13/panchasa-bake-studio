@@ -26,31 +26,31 @@ export const Navigation = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </a>
             <a 
-              href="#browse" 
+              href="#menu" 
               className="text-muted-foreground hover:text-primary transition-colors font-medium relative group"
             >
-              Browse
+              Menu
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </a>
             <a 
-              href="#stories" 
+              href="#about" 
               className="text-muted-foreground hover:text-primary transition-colors font-medium relative group"
             >
-              Stories
+              About Us
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </a>
             <a 
-              href="#events" 
+              href="#contact" 
               className="text-muted-foreground hover:text-primary transition-colors font-medium relative group"
             >
-              Events
+              Contact
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </a>
             <a 
-              href="#vendor" 
+              href="#become-baker" 
               className="text-muted-foreground hover:text-primary transition-colors font-medium relative group"
             >
-              Vendor
+              Become a Baker
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </a>
           </div>
