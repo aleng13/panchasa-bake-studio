@@ -60,6 +60,8 @@ All colors MUST be HSL.
     --shadow-warm: 0 4px 20px hsl(var(--primary) / 0.15);
     --shadow-soft: 0 2px 10px hsl(var(--primary) / 0.08);
     --shadow-glow: 0 0 30px hsl(var(--spice-turmeric) / 0.2);
+    --shadow-luxury: 0 8px 32px hsl(var(--primary) / 0.12);
+    --shadow-glass: 0 8px 32px hsl(var(--background) / 0.8);
 
     --radius: 0.75rem;
 
@@ -126,5 +128,29 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    @apply bg-card/60 backdrop-blur-xl border border-border/50;
+  }
+  
+  .floating-card {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-luxury;
+  }
+  
+  .shimmer {
+    background: linear-gradient(90deg, transparent 0%, hsl(var(--primary) / 0.1) 50%, transparent 100%);
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .trust-badge {
+    @apply bg-gradient-spice text-primary-foreground px-3 py-1 rounded-full text-sm font-medium shadow-soft;
   }
 }
